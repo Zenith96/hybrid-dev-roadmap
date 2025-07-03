@@ -1,0 +1,11 @@
+import numpy as np
+a = np .array([[1,2,3],[4,5,6]])
+print(a)
+print(a.ndim)
+print(a.shape)
+print(a.itemsize)
+print(a.size)
+print(a.nbytes)
+b=np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
+print(b)
+print(b[:,1,:])

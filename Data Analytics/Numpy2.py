@@ -1,0 +1,13 @@
+import numpy as np
+print(np.zeros((5)))
+a = np .array([[1,2,3],[4,5,6]])
+print(np.full((2,3),4))
+print(np.full_like(a,4))
+print(np.full(a.shape,4))
+print(np.random.random_sample(a.shape))
+print(np.random.randint(4,7,size=(2,2)))
+arr = np.array([1,2,3])
+r1 = np.repeat(arr,2)
+r2 = np.repeat(a,2,axis=0)
+print(r1)
+print(r2)
