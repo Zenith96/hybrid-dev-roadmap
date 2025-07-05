@@ -7,4 +7,4 @@ a = a -2
 print(a)
 b = np.array([1,1,1,1])
 print(a+b)
-np.sin(a)
+print(np.sin(a))
