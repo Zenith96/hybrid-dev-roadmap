@@ -1,4 +1,4 @@
-week2_django_env/
+week2_django_venv/
 __pycache__/
 *.pyc
 db.sqlite3
