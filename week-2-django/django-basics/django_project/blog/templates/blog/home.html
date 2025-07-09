@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if Information.0.Sequence %}
+    <title>{{Information.0.Sequence}}</title>
+    {% else %}
+    <title>Not a Pillar(MGOD is a dawg)</title>
+    {% endif %}
+</head>
+<body>
+    {% for info in Information  %}
+    <h1>{{info.Name}}</h1>
+    <p>He is {{info.Title}}.He is currently {{info.Status}}.</p>
+     {% endfor %}
+</body>
+</html>
