@@ -1,30 +1,27 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-Info =[
+posts = [
     {
-        'Name':'Zhou Mingrui / Klien Moretti',
-        'Title':'The Fool/The World',
-        'Status':'Fused/Slumber',
-        'Sequence':'Lord of The Mysteries',
-        'Predecessor':'Celestial Worthy'
+        'author': 'Klien Moretti',
+        'title': 'Blog Post 1',
+        'content': 'First post content',
+        'date_posted': 'August 27, 2018'
     },
     {
-        'Name':'Adam',
-        'Title':'The Spectator',
-        'Status':'Dead',
-        'Sequence':'God Almighty',
-        'Predecessor':'Promodial God Almighty'
-
+        'author': 'Adam',
+        'title': 'Blog Post 2',
+        'content': 'Second post content',
+        'date_posted': 'August 28, 2018'
     }
 ]
 
+
 def home(request):
-    bio = {
-        'Information' :Info
+    context = {
+        'posts': posts
     }
-    return render(request,'blog/home.html',bio)
+    return render(request, 'blog/home.html', context)
+
 
 def about(request):
-    return render(request,'blog/about.html',{'Sequence':'Great Old One'})
-
+    return render(request, 'blog/about.html', {'title': 'About'})
